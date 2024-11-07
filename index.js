@@ -10,7 +10,7 @@ app.use(cors());
 app.use(express.json())
 
 app.use('/api/v1/user',userRoute)
-app.get('',(req,res)=>{
+app.get('/api/get',(req,res)=>{
     res.send({message:"Server is Running"});
 })
 
